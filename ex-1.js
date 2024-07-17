@@ -15,10 +15,4 @@ function findStudentIndex(students, searchStudent) {
     return -1;
 }
 
-let students = ["Andrew", "Bobby", "Diana", "George", "Hannah", "Isaac", "Jasmine", "John"]
-let searchStudent = "John"
-
-console.log(findStudentIndex(students, searchStudent))
-
-
-// ตอบคำถามตรงนี้จ้า O(log n)
+// ตอบคำถามตรงนี้จ้า O(log n) เพราะมีรอบในการวนลูปน้อยกว่า linear search  ที่ต้องเข้าไปเช็คทีละ index ทุกตัว (log n < n)
